@@ -329,7 +329,7 @@ bingoList[21] = [{
   "name": "Kill every enemy that enters the screen (even when you re-enter rooms)",
   "types": ["enemies"]
 }, {
-  "name": "Do not get hit by physical attacks or projectiles",
+  "name": "Don't get hit by enemy attacks",
   "types": ["require-no-hit", "restriction"]
 }];
 
