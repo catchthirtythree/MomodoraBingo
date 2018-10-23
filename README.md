@@ -1,4 +1,6 @@
 # MomodoraBingo
 Bingo sheet for Momodora: Reverie Under the Moonlight
 
-Made possible by http://speedruntools.com/bingo/
+Visit here: https://catchthirtythree.github.io/momo-bingo/
+
+Made possible by: http://speedruntools.com/bingo/
