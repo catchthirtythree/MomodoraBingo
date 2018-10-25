@@ -200,7 +200,7 @@ var bingo = function(bingoList, size) {
     return synergy;
   }
 
-  var bingoBoard = []; //the board itself stored as an array first
+  var bingoBoard = []; // The board itself stored as an array first
   for (var i = 1; i <= 25; i++) {
     bingoBoard[i] = { difficulty: difficulty(i) }; // Array with objects that
     // console.log(bingoBoard[i].difficulty);      // Store the difficulty
