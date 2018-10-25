@@ -236,6 +236,23 @@ var bingo = function(bingoList, size) {
   return true;
 }
 
+function downloadJson() {
+  var lines = Array.from(document.querySelectorAll('table#bingo tr td[class*=row]')).map(row => {
+    return {
+      name: row.innerText
+    }
+  });
+
+  var json = JSON.stringify(lines);
+  var data = "data:text/json;charset=utf-8," + encodeURIComponent(json);
+  var dataEl = document.createElement('a');
+  document.body.appendChild(dataEl);
+  dataEl.setAttribute("href", data);
+  dataEl.setAttribute("download", "momodora-bingosync.json");
+  dataEl.click();
+  document.body.removeChild(dataEl);
+}
+
 function reseedPage(mode) {
   var qSeed = "?seed=" + Math.ceil(999999 * Math.random());
   var qMode = (mode == "short" || mode == "long") ? "&mode=" + mode : "";
