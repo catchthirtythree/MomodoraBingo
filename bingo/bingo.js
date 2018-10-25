@@ -86,7 +86,7 @@ var bingo = function(bingoList, size) {
       items.push(encodeURIComponent($(cells[i]).html()));
     }
 
-    window.open('/bingo-popout.html#' + name + '=' + items.join(';;;'), "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=220, height=460");
+    window.open('bingo-popout.html#' + name + '=' + items.join(';;;'), "_blank", "toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=220, height=460");
   });
 
   $("#bingo tr td:not(.popout), #selected td").toggle(
