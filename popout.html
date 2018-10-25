@@ -2,7 +2,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Bingo Popout - SpeedRunTools</title>
+  <title>Momodora: Reverie Under the Moonlight Bingo Popout</title>
   <style type="text/css">
     html,
     body {
@@ -96,9 +96,13 @@
       var data = document.location.hash.substring(1).split('=');
       var line = data[0];
       var items = data[1].split(';;;');
+
       $('table th').html(line);
-      for (a in items)
+
+      for (a in items) {
         $('table').append('<tr><td>' + decodeURIComponent(items[a]) + '</td></tr>');
+      }
+
       $("td").toggle(
         function() { $(this).addClass("greensquare"); },
         function() { $(this).addClass("redsquare").removeClass("greensquare"); },
